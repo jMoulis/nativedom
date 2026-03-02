@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - context.ts
+ * @nativedom/core - context.ts
  *
  * Provide/inject — pass data down the component tree without explicit prop threading.
  *

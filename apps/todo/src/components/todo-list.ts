@@ -1,4 +1,4 @@
-import { component, repeat } from "@nativeframe/core";
+import { component, repeat } from "@nativedom/core";
 import { filteredTodos } from "../lib/filtered-todos.js";
 import { TodoItem } from "./todo-item.js";
 

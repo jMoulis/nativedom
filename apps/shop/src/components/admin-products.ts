@@ -1,4 +1,4 @@
-import { component, asyncSignal } from "@nativeframe/core";
+import { component, asyncSignal } from "@nativedom/core";
 import type { Product } from "../types.js";
 import { adminRouter } from "../router.js";
 

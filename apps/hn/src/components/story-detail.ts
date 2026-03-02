@@ -1,4 +1,4 @@
-import { component, asyncSignal, repeat } from "@nativeframe/core";
+import { component, asyncSignal, repeat } from "@nativedom/core";
 import { fetchItem, hostname, timeAgo } from "../lib/hn-api.js";
 import { CommentItem, CommentDepthCtx } from "./comment-item.js";
 import { DetailSection } from "./detail-section.js";

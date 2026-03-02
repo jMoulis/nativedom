@@ -1,4 +1,4 @@
-import { createStore } from "@nativeframe/store";
+import { createStore } from "@nativedom/store";
 import type { Filter } from "../types.js";
 
 export const uiStore = createStore({

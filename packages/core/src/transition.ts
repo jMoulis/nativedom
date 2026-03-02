@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - transition.ts
+ * @nativedom/core - transition.ts
  *
  * CSS transition directive for html`` templates.
  *

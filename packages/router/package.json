@@ -1,27 +1,36 @@
 {
-  "name": "@nativeframe/router",
-  "version": "0.1.0",
-  "description": "Signal-backed client-side router for NativeFrame",
-  "keywords": ["web-components", "router", "signals", "spa", "history-api"],
+  "name": "@nativedom/router",
+  "version": "0.1.1",
+  "description": "Signal-backed client-side router for NativeDOM",
+  "keywords": [
+    "web-components",
+    "router",
+    "signals",
+    "spa",
+    "history-api"
+  ],
   "license": "MIT",
   "type": "module",
-  "exports": { ".": "./src/index.ts" },
-  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
+    "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist"
   },
   "peerDependencies": {
-    "@nativeframe/core": ">=0.1.0"
+    "@nativedom/core": ">=0.1.0"
   },
   "publishConfig": {
-    "access": "public",
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "import": "./dist/index.js"
-      }
-    }
+    "access": "public"
   }
 }

@@ -1,12 +1,12 @@
 /**
- * @nativeframe/server - renderer.ts
+ * @nativedom/server - renderer.ts
  *
  * Server-side rendering utilities.
  * Composes ssrRender() calls into full HTML documents with
  * Declarative Shadow DOM and store hydration.
  */
 
-import { ssrRender } from "@nativeframe/core";
+import { ssrRender } from "@nativedom/core";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 

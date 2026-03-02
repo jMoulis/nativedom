@@ -1,5 +1,5 @@
 // src/renderer.ts
-import { ssrRender } from "@nativeframe/core";
+import { ssrRender } from "@nativedom/core";
 function buildShell(options) {
   const { title = "", head = "", lang = "en" } = options;
   return `<!DOCTYPE html>

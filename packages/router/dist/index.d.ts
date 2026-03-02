@@ -1,7 +1,7 @@
-import { Interpolation, Computed } from '@nativeframe/core';
+import { Interpolation, Computed } from '@nativedom/core';
 
 /**
- * @nativeframe/router
+ * @nativedom/router
  *
  * Signal-backed client-side router built on the History API.
  * Works isomorphically: resolves once on the server, stays reactive on the client.

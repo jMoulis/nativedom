@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - signals.ts
+ * @nativedom/core - signals.ts
  *
  * Fine-grained reactivity without any Virtual DOM.
  * Zero dependencies. Pure TypeScript.
@@ -86,7 +86,6 @@ export function signal<T>(initialValue: T): Signal<T> {
     },
 
     set(newValue: T): void {
-      console.log(newValue);
       if (Object.is(value, newValue)) return;
       value = newValue;
       notify(subscribers);

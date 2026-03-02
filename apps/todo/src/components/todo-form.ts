@@ -1,4 +1,4 @@
-import { component } from "@nativeframe/core";
+import { component } from "@nativedom/core";
 import { addTodo } from "../lib/todo-ops.js";
 
 export const TodoForm = component("todo-form", (_, { html }) => {

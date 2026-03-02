@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - component.ts
+ * @nativedom/core - component.ts
  *
  * Isomorphic component system built on Custom Elements.
  * One definition → Custom Element on the client, Declarative Shadow DOM on the server.
@@ -209,7 +209,7 @@ export function component<P extends object = Record<string, unknown>>(
 ): ComponentFactory<P> {
   if (!name.includes('-')) {
     throw new Error(
-      `[nativeframe] Component name "${name}" must contain a hyphen (Custom Elements spec).`,
+      `[nativedom] Component name "${name}" must contain a hyphen (Custom Elements spec).`,
     );
   }
 
@@ -254,7 +254,7 @@ export function ssrRender<P extends object>(
 ): string {
   const def = registry.get(name);
   if (def === undefined) {
-    throw new Error(`[nativeframe] Unknown component: "${name}". Did you forget to import it?`);
+    throw new Error(`[nativedom] Unknown component: "${name}". Did you forget to import it?`);
   }
 
   const ctx = buildServerContext();
@@ -390,7 +390,7 @@ function registerClientElement<P extends object>(
         this.#effectHandles.length = effectsBefore;
 
         if (options.onError !== undefined) {
-          console.error(`[nativeframe] <${this.tagName.toLowerCase()}>:`, err);
+          console.error(`[nativedom] <${this.tagName.toLowerCase()}>:`, err);
           try {
             const fallback = options.onError(err);
             if (fallback instanceof DocumentFragment) {
@@ -446,7 +446,7 @@ function registerClientElement<P extends object>(
             ? effect(() => {
                 try { fn(); }
                 catch (err) {
-                  console.error(`[nativeframe] effect error in <${self.tagName.toLowerCase()}>:`, err);
+                  console.error(`[nativedom] effect error in <${self.tagName.toLowerCase()}>:`, err);
                 }
               })
             : effect(fn);

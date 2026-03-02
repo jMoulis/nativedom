@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - signals.ts
+ * @nativedom/core - signals.ts
  *
  * Fine-grained reactivity without any Virtual DOM.
  * Zero dependencies. Pure TypeScript.
@@ -106,7 +106,7 @@ declare function batch(fn: () => void): void;
 declare function untrack<T>(fn: () => T): T;
 
 /**
- * @nativeframe/core - context.ts
+ * @nativedom/core - context.ts
  *
  * Provide/inject — pass data down the component tree without explicit prop threading.
  *
@@ -150,7 +150,7 @@ interface Context<T> {
 declare function createContext<T>(defaultValue: T): Context<T>;
 
 /**
- * @nativeframe/core - ref.ts
+ * @nativedom/core - ref.ts
  *
  * Refs — a way to get a direct handle to a DOM element from inside a template.
  *
@@ -179,7 +179,7 @@ interface Ref<T extends Element = Element> {
 declare function createRef<T extends Element>(): Ref<T>;
 
 /**
- * @nativeframe/core - directives.ts
+ * @nativedom/core - directives.ts
  *
  * Base infrastructure for content directives — special interpolation values
  * that take direct control over a content binding's anchor node.
@@ -213,7 +213,7 @@ interface ContentDirective {
 declare function isContentDirective(value: unknown): value is ContentDirective;
 
 /**
- * @nativeframe/core - html.ts
+ * @nativedom/core - html.ts
  *
  * Isomorphic tagged template literal.
  * - Client → builds real DOM nodes with reactive effects attached directly
@@ -329,7 +329,7 @@ type Slot = Interpolation;
 declare function trustedHtml(htmlStr: string): ContentDirective;
 
 /**
- * @nativeframe/core - component.ts
+ * @nativedom/core - component.ts
  *
  * Isomorphic component system built on Custom Elements.
  * One definition → Custom Element on the client, Declarative Shadow DOM on the server.
@@ -509,7 +509,7 @@ declare function ssrRender<P extends object>(name: string, props?: P): string;
 declare function getComponentStyles(): string;
 
 /**
- * @nativeframe/core - repeat.ts
+ * @nativedom/core - repeat.ts
  *
  * Keyed list reconciliation for html`` templates.
  *
@@ -555,7 +555,7 @@ declare function getComponentStyles(): string;
 declare function repeat<T>(getter: () => T[], keyFn: (item: T, index: number) => string | number, renderFn: (item: T, index: number) => Interpolation): ContentDirective;
 
 /**
- * @nativeframe/core - transition.ts
+ * @nativedom/core - transition.ts
  *
  * CSS transition directive for html`` templates.
  *
@@ -608,7 +608,7 @@ interface TransitionOptions {
 declare function transition(getter: () => Interpolation, options?: TransitionOptions): ContentDirective;
 
 /**
- * @nativeframe/core - async.ts
+ * @nativedom/core - async.ts
  *
  * Reactive async data-fetching helper.
  *

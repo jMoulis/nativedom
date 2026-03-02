@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core
+ * @nativedom/core
  *
  * Public API barrel — re-exports signals, html, and component.
  */

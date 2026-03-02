@@ -1,4 +1,4 @@
-import { component, asyncSignal } from "@nativeframe/core";
+import { component, asyncSignal } from "@nativedom/core";
 import { fetchItem, hostname, timeAgo } from "../lib/hn-api.js";
 
 export const StoryItem = component<{ "story-id": number; rank: number }>(

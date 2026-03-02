@@ -1,4 +1,4 @@
-import { component, ssrRender } from "@nativeframe/core";
+import { component, ssrRender } from "@nativedom/core";
 import { products } from "../db/products.js";
 
 function formatPrice(cents: number): string {

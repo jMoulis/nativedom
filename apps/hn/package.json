@@ -1,5 +1,5 @@
 {
-  "name": "@nativeframe/hn",
+  "name": "@nativedom/hn",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@nativeframe/core": "*",
-    "@nativeframe/router": "*"
+    "@nativedom/core": "*",
+    "@nativedom/router": "*"
   },
   "devDependencies": {
     "vite": "^6.0.0"

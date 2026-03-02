@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - directives.ts
+ * @nativedom/core - directives.ts
  *
  * Base infrastructure for content directives — special interpolation values
  * that take direct control over a content binding's anchor node.

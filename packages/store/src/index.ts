@@ -1,5 +1,5 @@
 /**
- * @nativeframe/store - index.ts
+ * @nativedom/store - index.ts
  *
  * Cross-component reactive store built entirely on signals.
  * Fully typed — store shape is inferred automatically from the initial state.
@@ -12,7 +12,7 @@ import {
   batch,
   type Signal,
   type Computed,
-} from "@nativeframe/core";
+} from "@nativedom/core";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 

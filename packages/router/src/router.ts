@@ -1,5 +1,5 @@
 /**
- * @nativeframe/router
+ * @nativedom/router
  *
  * Signal-backed client-side router built on the History API.
  * Works isomorphically: resolves once on the server, stays reactive on the client.
@@ -11,8 +11,8 @@
  * - SSR-safe: accepts an explicit path when window is undefined
  */
 
-import { signal, computed, type Computed } from '@nativeframe/core';
-import type { Interpolation } from '@nativeframe/core';
+import { signal, computed, type Computed } from '@nativedom/core';
+import type { Interpolation } from '@nativedom/core';
 
 // ─── Public types ─────────────────────────────────────────────────────────────
 

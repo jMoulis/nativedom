@@ -1,4 +1,4 @@
-import { component, asyncSignal, repeat, createContext, type ComponentFactory } from "@nativeframe/core";
+import { component, asyncSignal, repeat, createContext, type ComponentFactory } from "@nativedom/core";
 import { fetchItem, timeAgo } from "../lib/hn-api.js";
 
 /** Tracks comment nesting depth. Provided by story-detail, incremented by each comment-item. */

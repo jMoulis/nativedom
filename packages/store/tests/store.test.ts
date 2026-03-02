@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 import { createStore } from "../src/index.js";
-import { effect } from "@nativeframe/core";
+import { effect } from "@nativedom/core";
 
 describe("createStore()", () => {
   it("exposes each key as a signal", () => {

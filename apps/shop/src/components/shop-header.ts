@@ -1,4 +1,4 @@
-import { component } from "@nativeframe/core";
+import { component } from "@nativedom/core";
 
 export const ShopHeader = component(
   "shop-header",

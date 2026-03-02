@@ -1,5 +1,5 @@
 {
-  "name": "@nativeframe/todo",
+  "name": "@nativedom/todo",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -8,9 +8,9 @@
     "serve": "tsx src/server.ts"
   },
   "dependencies": {
-    "@nativeframe/core": "*",
-    "@nativeframe/store": "*",
-    "@nativeframe/server": "*"
+    "@nativedom/core": "*",
+    "@nativedom/store": "*",
+    "@nativedom/server": "*"
   },
   "devDependencies": {
     "tsx": "^4.0.0",

@@ -1,24 +1,33 @@
 {
-  "name": "@nativeframe/core",
-  "version": "0.1.0",
+  "name": "@nativedom/core",
+  "version": "0.1.1",
   "description": "Fine-grained signals, isomorphic Web Components, and html`` tagged templates",
-  "keywords": ["web-components", "signals", "reactive", "ssr", "isomorphic"],
+  "keywords": [
+    "web-components",
+    "signals",
+    "reactive",
+    "ssr",
+    "isomorphic"
+  ],
   "license": "MIT",
   "type": "module",
-  "exports": { ".": "./src/index.ts" },
-  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
+    "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist"
   },
   "publishConfig": {
-    "access": "public",
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "import": "./dist/index.js"
-      }
-    }
+    "access": "public"
   }
 }

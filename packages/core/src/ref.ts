@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - ref.ts
+ * @nativedom/core - ref.ts
  *
  * Refs — a way to get a direct handle to a DOM element from inside a template.
  *

@@ -1,5 +1,5 @@
 {
-  "name": "@nativeframe/shop",
+  "name": "@nativedom/shop",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -8,9 +8,9 @@
     "serve": "tsx src/server.ts"
   },
   "dependencies": {
-    "@nativeframe/core": "*",
-    "@nativeframe/server": "*",
-    "@nativeframe/router": "*"
+    "@nativedom/core": "*",
+    "@nativedom/server": "*",
+    "@nativedom/router": "*"
   },
   "devDependencies": {
     "tsx": "^4.0.0",

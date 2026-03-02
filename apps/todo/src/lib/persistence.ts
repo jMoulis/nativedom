@@ -1,4 +1,4 @@
-import { effect } from "@nativeframe/core";
+import { effect } from "@nativedom/core";
 import { todoStore } from "../stores/todo-store.js";
 import type { Todo } from "../types.js";
 

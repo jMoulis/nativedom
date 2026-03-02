@@ -3,7 +3,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { streamPage } from "@nativeframe/server";
+import { streamPage } from "@nativedom/server";
 import "./components/todo-form.js";
 import "./components/todo-list.js";
 import "./components/todo-item.js";

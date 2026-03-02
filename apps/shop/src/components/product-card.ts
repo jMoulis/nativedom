@@ -1,4 +1,4 @@
-import { component } from "@nativeframe/core";
+import { component } from "@nativedom/core";
 import { products } from "../db/products.js";
 
 function formatPrice(cents: number): string {

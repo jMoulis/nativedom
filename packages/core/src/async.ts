@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - async.ts
+ * @nativedom/core - async.ts
  *
  * Reactive async data-fetching helper.
  *

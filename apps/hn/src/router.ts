@@ -1,5 +1,5 @@
-import { html } from "@nativeframe/core";
-import { createRouter } from "@nativeframe/router";
+import { html } from "@nativedom/core";
+import { createRouter } from "@nativedom/router";
 import { StoryList } from "./components/story-list.js";
 import { StoryDetail } from "./components/story-detail.js";
 

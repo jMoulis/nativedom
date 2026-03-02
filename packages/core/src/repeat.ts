@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - repeat.ts
+ * @nativedom/core - repeat.ts
  *
  * Keyed list reconciliation for html`` templates.
  *

@@ -1,4 +1,4 @@
-import { component, type Slot } from "@nativeframe/core";
+import { component, type Slot } from "@nativedom/core";
 
 /**
  * A labelled section used in the story detail view.

@@ -4,8 +4,8 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { IncomingMessage, ServerResponse } from "node:http";
 
-import { streamPage } from "@nativeframe/server";
-import { getComponentStyles } from "@nativeframe/core";
+import { streamPage } from "@nativedom/server";
+import { getComponentStyles } from "@nativedom/core";
 
 // Register all components server-side
 import "./components/shop-header.js";

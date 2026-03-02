@@ -1,5 +1,5 @@
-import { html } from "@nativeframe/core";
-import { createRouter } from "@nativeframe/router";
+import { html } from "@nativedom/core";
+import { createRouter } from "@nativedom/router";
 import { AdminProducts } from "./components/admin-products.js";
 import { AdminForm } from "./components/admin-form.js";
 

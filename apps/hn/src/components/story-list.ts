@@ -1,4 +1,4 @@
-import { component, asyncSignal, repeat } from "@nativeframe/core";
+import { component, asyncSignal, repeat } from "@nativedom/core";
 import { fetchTopStories } from "../lib/hn-api.js";
 import { StoryItem } from "./story-item.js";
 

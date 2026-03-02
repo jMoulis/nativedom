@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { component } from "@nativeframe/core";
+import { component } from "@nativedom/core";
 import { renderPage, renderFragment, streamPage } from "../src/renderer.js";
 
 // Register test components before tests run

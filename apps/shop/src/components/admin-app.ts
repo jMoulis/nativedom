@@ -1,5 +1,5 @@
-import { component } from "@nativeframe/core";
-import type { Interpolation } from "@nativeframe/core";
+import { component } from "@nativedom/core";
+import type { Interpolation } from "@nativedom/core";
 import { adminRouter } from "../router.js";
 
 export const AdminApp = component(

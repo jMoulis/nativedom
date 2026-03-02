@@ -80,7 +80,7 @@ describe('onError — render-phase errors', () => {
 
     mount('err-log');
     expect(consoleError).toHaveBeenCalledWith(
-      expect.stringContaining('[nativeframe]'),
+      expect.stringContaining('[nativedom]'),
       expect.any(Error),
     );
   });

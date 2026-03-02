@@ -1,4 +1,6 @@
 .claude
 node_modules
 .env
-.dist
+dist
+.DS_Store
+.npmrc

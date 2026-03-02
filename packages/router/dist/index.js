@@ -1,5 +1,5 @@
 // src/router.ts
-import { signal, computed } from "@nativeframe/core";
+import { signal, computed } from "@nativedom/core";
 function matchRoute(pattern, path) {
   if (pattern === "*") return {};
   const normalize = (s) => s.split("/").filter(Boolean);

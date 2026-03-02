@@ -3,7 +3,7 @@ import {
   signal,
   computed,
   batch
-} from "@nativeframe/core";
+} from "@nativedom/core";
 function createStore(initialState) {
   const signals = {};
   for (const key of Object.keys(initialState)) {

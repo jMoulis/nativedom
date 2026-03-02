@@ -7,5 +7,5 @@ export default defineConfig({
   dts: true,
   clean: true,
   sourcemap: true,
-  external: ["@nativeframe/core"],
+  external: ["@nativedom/core"],
 });

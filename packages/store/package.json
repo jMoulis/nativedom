@@ -1,27 +1,36 @@
 {
-  "name": "@nativeframe/store",
-  "version": "0.1.0",
+  "name": "@nativedom/store",
+  "version": "0.1.1",
   "description": "Reactive global store with SSR snapshot/rehydration for NativeFrame",
-  "keywords": ["web-components", "signals", "store", "ssr", "reactive"],
+  "keywords": [
+    "web-components",
+    "signals",
+    "store",
+    "ssr",
+    "reactive"
+  ],
   "license": "MIT",
   "type": "module",
-  "exports": { ".": "./src/index.ts" },
-  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
+    "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist"
   },
   "peerDependencies": {
-    "@nativeframe/core": ">=0.1.0"
+    "@nativedom/core": ">=0.1.0"
   },
   "publishConfig": {
-    "access": "public",
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "import": "./dist/index.js"
-      }
-    }
+    "access": "public"
   }
 }

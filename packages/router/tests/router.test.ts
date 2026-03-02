@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { effect } from '@nativeframe/core';
+import { effect } from '@nativedom/core';
 import { createRouter } from '../src/router.js';
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────

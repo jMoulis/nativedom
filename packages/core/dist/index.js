@@ -14,7 +14,6 @@ function signal(initialValue) {
       return value;
     },
     set(newValue) {
-      console.log(newValue);
       if (Object.is(value, newValue)) return;
       value = newValue;
       notify(subscribers);
@@ -389,7 +388,7 @@ var registry = /* @__PURE__ */ new Map();
 function component(name, fn, options = {}) {
   if (!name.includes("-")) {
     throw new Error(
-      `[nativeframe] Component name "${name}" must contain a hyphen (Custom Elements spec).`
+      `[nativedom] Component name "${name}" must contain a hyphen (Custom Elements spec).`
     );
   }
   const definition = {
@@ -413,7 +412,7 @@ function component(name, fn, options = {}) {
 function ssrRender(name, props = {}) {
   const def = registry.get(name);
   if (def === void 0) {
-    throw new Error(`[nativeframe] Unknown component: "${name}". Did you forget to import it?`);
+    throw new Error(`[nativedom] Unknown component: "${name}". Did you forget to import it?`);
   }
   const ctx = buildServerContext();
   const noOp = (_fn) => ({ dispose: () => {
@@ -515,7 +514,7 @@ function registerClientElement(def) {
         }
         this.#effectHandles.length = effectsBefore;
         if (options.onError !== void 0) {
-          console.error(`[nativeframe] <${this.tagName.toLowerCase()}>:`, err);
+          console.error(`[nativedom] <${this.tagName.toLowerCase()}>:`, err);
           try {
             const fallback = options.onError(err);
             if (fallback instanceof DocumentFragment) {
@@ -562,7 +561,7 @@ function registerClientElement(def) {
             try {
               fn2();
             } catch (err) {
-              console.error(`[nativeframe] effect error in <${self.tagName.toLowerCase()}>:`, err);
+              console.error(`[nativedom] effect error in <${self.tagName.toLowerCase()}>:`, err);
             }
           }) : effect(fn2);
           self.#effectHandles.push(handle);

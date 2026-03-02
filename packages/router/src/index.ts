@@ -1,5 +1,5 @@
 /**
- * @nativeframe/router
+ * @nativedom/router
  *
  * Signal-backed client-side router for NativeFrame apps.
  */

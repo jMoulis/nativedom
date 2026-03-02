@@ -1,4 +1,4 @@
-import { computed } from "@nativeframe/core";
+import { computed } from "@nativedom/core";
 import { todoStore } from "../stores/todo-store.js";
 import { uiStore } from "../stores/ui-store.js";
 

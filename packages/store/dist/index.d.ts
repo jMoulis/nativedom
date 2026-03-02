@@ -1,7 +1,7 @@
-import { Signal, Computed } from '@nativeframe/core';
+import { Signal, Computed } from '@nativedom/core';
 
 /**
- * @nativeframe/store - index.ts
+ * @nativedom/store - index.ts
  *
  * Cross-component reactive store built entirely on signals.
  * Fully typed — store shape is inferred automatically from the initial state.

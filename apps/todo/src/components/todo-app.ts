@@ -1,4 +1,4 @@
-import { component, ssrRender } from "@nativeframe/core";
+import { component, ssrRender } from "@nativedom/core";
 
 export const TodoApp = component("todo-app", () => `
   <style>

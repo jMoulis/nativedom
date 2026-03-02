@@ -9,25 +9,25 @@
  * - Provide any missing globals that happy-dom doesn't polyfill yet
  * - Reset custom element registry between test suites
  */
-import { beforeEach, afterEach } from 'vitest';
+import { beforeEach, afterEach } from "vitest";
 
 // ── Verify happy-dom provides what we need ────────────────────────────────────
 
 const required = [
-  'document',
-  'window',
-  'customElements',
-  'HTMLElement',
-  'Node',
-  'NodeFilter',
-  'MutationObserver',
+  "document",
+  "window",
+  "customElements",
+  "HTMLElement",
+  "Node",
+  "NodeFilter",
+  "MutationObserver",
 ];
 
 for (const api of required) {
-  if (typeof globalThis[api as keyof typeof globalThis] === 'undefined') {
+  if (typeof globalThis[api as keyof typeof globalThis] === "undefined") {
     throw new Error(
-      `[nativeframe/test] Required Web API "${api}" is not available in happy-dom. ` +
-      `Update happy-dom or provide a polyfill.`,
+      `[nativedom/test] Required Web API "${api}" is not available in happy-dom. ` +
+        `Update happy-dom or provide a polyfill.`,
     );
   }
 }
@@ -66,7 +66,7 @@ globalThis.getShadowRoot = (el: HTMLElement): ShadowRoot => {
   if (root === null) {
     throw new Error(
       `Element <${el.tagName.toLowerCase()}> has no shadow root. ` +
-      `Did you use shadow: true in your component definition?`,
+        `Did you use shadow: true in your component definition?`,
     );
   }
   return root;

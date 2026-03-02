@@ -1,4 +1,4 @@
-import { component } from "@nativeframe/core";
+import { component } from "@nativedom/core";
 import { todoStore } from "../stores/todo-store.js";
 import { uiStore } from "../stores/ui-store.js";
 import { toggleAll, clearCompleted } from "../lib/todo-ops.js";

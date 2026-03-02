@@ -1,5 +1,5 @@
 /**
- * @nativeframe/core - html.ts
+ * @nativedom/core - html.ts
  *
  * Isomorphic tagged template literal.
  * - Client → builds real DOM nodes with reactive effects attached directly
