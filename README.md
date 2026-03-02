@@ -1,4 +1,4 @@
-# NativeDOM
+# NativeDOM (Fully AI generated)
 
 A lightweight, isomorphic Web Components framework with fine-grained reactivity. Build interactive UIs using native browser primitives — no virtual DOM, no magic, just signals and standard Custom Elements.
 
@@ -17,12 +17,12 @@ A lightweight, isomorphic Web Components framework with fine-grained reactivity.
 
 ## Packages
 
-| Package | Version | Description |
-|---|---|---|
-| [`@nativedom/core`](packages/core) | 0.1.0 | Signals, components, `html` template engine |
-| [`@nativedom/store`](packages/store) | 0.1.0 | Reactive global store with SSR snapshot |
-| [`@nativedom/router`](packages/router) | 0.1.0 | Signal-backed client-side router |
-| [`@nativedom/server`](packages/server) | 0.1.0 | Server-side rendering & streaming |
+| Package                                | Version | Description                                 |
+| -------------------------------------- | ------- | ------------------------------------------- |
+| [`@nativedom/core`](packages/core)     | 0.1.0   | Signals, components, `html` template engine |
+| [`@nativedom/store`](packages/store)   | 0.1.0   | Reactive global store with SSR snapshot     |
+| [`@nativedom/router`](packages/router) | 0.1.0   | Signal-backed client-side router            |
+| [`@nativedom/server`](packages/server) | 0.1.0   | Server-side rendering & streaming           |
 
 ---
 
@@ -95,14 +95,14 @@ component('my-element', (ctx) => {
 
 ### `html` template syntax
 
-| Syntax | Purpose |
-|---|---|
-| `${() => sig.get()}` | Reactive text / node content |
-| `attr="${() => val}"` | Reactive attribute |
-| `.propName="${() => val}"` | IDL property binding (bypasses `setAttribute`) |
-| `@eventName=${handler}` | Event listener (no-op in SSR) |
-| `${() => list.map(x => html`...`)}` | List rendering |
-| `${trustedHtml(str)}` | Interpolate raw HTML strings |
+| Syntax                              | Purpose                                        |
+| ----------------------------------- | ---------------------------------------------- |
+| `${() => sig.get()}`                | Reactive text / node content                   |
+| `attr="${() => val}"`               | Reactive attribute                             |
+| `.propName="${() => val}"`          | IDL property binding (bypasses `setAttribute`) |
+| `@eventName=${handler}`             | Event listener (no-op in SSR)                  |
+| `${() => list.map(x => html`...`)}` | List rendering                                 |
+| `${trustedHtml(str)}`               | Interpolate raw HTML strings                   |
 
 ```ts
 import { html, trustedHtml } from '@nativedom/core';
@@ -269,11 +269,11 @@ Components marked with `island: true` are rendered statically on the server and 
 
 ## Demo Apps
 
-| App | Description | Commands |
-|---|---|---|
-| [`apps/todo`](apps/todo) | TodoMVC — SSR + client hydration | `npm run serve` (port 3001) |
-| [`apps/hn`](apps/hn) | Hacker News reader — client-side SPA | `npm run dev` / `npm run build` |
-| [`apps/shop`](apps/shop) | Shop with admin panel — SSR + router | `npm run serve` |
+| App                      | Description                          | Commands                        |
+| ------------------------ | ------------------------------------ | ------------------------------- |
+| [`apps/todo`](apps/todo) | TodoMVC — SSR + client hydration     | `npm run serve` (port 3001)     |
+| [`apps/hn`](apps/hn)     | Hacker News reader — client-side SPA | `npm run dev` / `npm run build` |
+| [`apps/shop`](apps/shop) | Shop with admin panel — SSR + router | `npm run serve`                 |
 
 ---
 
