@@ -1,0 +1,19 @@
+{
+  "name": "@nativeframe/todo",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "serve": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@nativeframe/core": "*",
+    "@nativeframe/store": "*",
+    "@nativeframe/server": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "vite": "^6.0.0"
+  }
+}
